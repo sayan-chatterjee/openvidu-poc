@@ -11,7 +11,7 @@ import {OpenviduSessionComponent, StreamEvent, Session, UserModel, OpenViduLayou
 })
 export class AppComponent {
   OPENVIDU_SERVER_URL = 'https://' + location.hostname + ':4443';
-  OPENVIDU_SERVER_SECRET = 'MY_SECRET';
+  OPENVIDU_SERVER_SECRET = 'openvidu_poc';
 
   // Join form
   mySessionId = 'SessionA';
