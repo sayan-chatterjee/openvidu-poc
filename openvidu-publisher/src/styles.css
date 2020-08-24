@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
 
 html {
   position: relative;
@@ -67,4 +67,46 @@ nav i.fa:hover {
 #title {
   text-align: center;
   height: 100%;
+}
+
+.navbar {
+  left: 117px !important;
+
+}
+
+/* side navbar */
+
+.sidenav {
+  height: 100%;
+  width: 247px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111111e0;
+  overflow-x: hidden;
+  padding-top: 90px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 19px;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 119px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 47px;}
+  .sidenav a {font-size: 18px;}
 }

@@ -1,0 +1,143 @@
+<div class="container main">
+    <div>
+        <form class="form-horizontal" role="form">
+            <h2>Registration</h2>
+            <div class="form-group">
+                <label for="firstName" class="col-sm-3 control-label" style="
+                font-size: 19px;">First Name</label>
+                <div class="col-sm-9">
+                    <input type="text" id="firstName" placeholder="First Name" class="form-control" autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lastName" class="col-sm-3 control-label" style="
+                font-size: 19px;">Last Name</label>
+                <div class="col-sm-9">
+                    <input type="text" id="lastName" placeholder="Last Name" class="form-control" autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="col-sm-3 control-label" style="
+                font-size: 19px;">Email* </label>
+                <div class="col-sm-9">
+                    <input type="email" id="email" placeholder="Email" class="form-control" name= "email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-sm-3 control-label" style="
+                font-size: 19px;">Password*</label>
+                <div class="col-sm-9">
+                    <input type="password" id="password" placeholder="Password" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-sm-3 control-label" style="
+                font-size: 19px;">Confirm Password*</label>
+                <div class="col-sm-9">
+                    <input type="password" id="password" placeholder="Password" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="birthDate" class="col-sm-3 control-label" style="
+                font-size: 19px;">Date of Birth*</label>
+                <div class="col-sm-9">
+                    <input type="date" id="birthDate" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber" class="col-sm-3 control-label"
+                style="
+                font-size: 19px;">Phone number </label>
+                <div class="col-sm-9">
+                    <input type="phoneNumber" id="phoneNumber" placeholder="Phone number" class="form-control">
+                    <span class="help-block" style="
+                    font-size: 19px;">Your phone number won't be disclosed anywhere </span>
+                </div>
+            </div>
+            <div class="form-group">
+                    <label for="Height" class="col-sm-3 control-label" style="
+                    font-size: 19px;">Height* </label>
+                <div class="col-sm-9">
+                    <input type="number" id="height" placeholder="Please write your height in centimetres" class="form-control">
+                </div>
+            </div>
+             <div class="form-group">
+                    <label for="weight" class="col-sm-3 control-label" style="
+                    font-size: 19px;">Weight* </label>
+                <div class="col-sm-9">
+                    <input type="number" id="weight" placeholder="Please write your weight in kilograms" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-3" style="
+                font-size: 19px;">Gender</label>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label class="radio-inline" style="
+                            font-size: 19px;">
+                                <input type="radio" id="femaleRadio" value="Female" >Female
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="radio-inline" style="
+                            font-size: 19px;">
+                                <input type="radio" id="maleRadio" value="Male">Male
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /.form-group -->
+            <div class="form-group">
+                <div class="col-sm-9 col-sm-offset-3">
+                    <span class="help-block" style="
+                    font-size: 19px;">*Required fields</span>
+                </div>
+            </div>
+            <div class="row"> 
+                <div class="col-sm-3">
+                    <button type="submit" class="btn btn-primary btn-block">Register</button>
+                </div>
+                <div class="col-sm-3">
+                    <button type="submit" class="btn btn-primary btn-block">Video Calling</button>
+                </div>
+                <div class="col-sm-3">
+                    <button type="submit" class="btn btn-primary btn-block">Screensharing</button>
+                </div>
+                <div class="col-sm-3">
+                    <button type="submit" class="btn btn-primary btn-block">Co-Browsing</button>
+                </div>
+
+            </div>
+            
+
+        </form> 
+    </div>
+</div> <!-- ./container -->
+
+<!-- <div *ngIf="!session" id="join">
+  <div id="join-dialog">
+    <h2>Join a video session</h2>
+    <form (submit)="joinSession()">
+      <p>
+        <label>Participant </label>
+        <input type="text" id="userName" name="userName" [(ngModel)]="myUserName" required>
+      </p>
+      <p>
+        <label>Session </label>
+        <input type="text" id="sessionId" name="sessionId" [(ngModel)]="mySessionId" required>
+      </p>
+      <p class="text-center">
+        <input type="submit" name="commit" value="Join!">
+      </p>
+    </form>
+  </div>
+</div> -->
+
+<!-- <div *ngIf="session" id="session">
+  <opv-session #ovSessionComponent [sessionName]="mySessionId" [user]="myUserName" [tokens]="tokens"
+    (sessionCreated)="handlerSessionCreatedEvent($event)" (participantCreated)="handlerPublisherCreatedEvent($event)" (error)="handlerErrorEvent($event)">
+  </opv-session> -->
+
+  <!-- <opv-session [sessionName]="mySessionId" [user]="myUserName" [openviduServerUrl]="'https://localhost:4443'" [openviduSecret]="'openvidu_poc'"></opv-session> -->
+<!-- </div> -->
